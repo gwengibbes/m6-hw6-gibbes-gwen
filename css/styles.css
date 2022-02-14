@@ -1,0 +1,95 @@
+/*========================================
+
+Universal Styling
+========================================*/
+* {
+    margin: 0;
+    padding: 0 12px;
+    border: 0;
+}
+body {
+    background: url('../images/moroccanflower.png') fixed;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+   max-width: 800px; 
+   margin: 0 auto;
+}
+
+header {
+   background: white; 
+   padding: 20px 0;
+   border-bottom: 3px solid grey;
+}
+
+nav {
+    display: flex;
+}
+
+header > nav > h1 {
+    margin-right: auto;
+}
+
+.link { 
+    margin: 0 5px;
+}
+
+nav a {
+    text-decoration: none;
+    font-weight: bold;
+    font-family: serif;
+    background: green;
+    color:white;
+    padding: 10px 20px;
+    margin: 0 10px;
+    border-radius: 4px;
+}
+
+main,
+aside {
+    background: white;
+}
+
+.container > main > h2 {
+    padding: 10px 25px;
+}
+main img {
+    float: left;
+    margin-right: 10px;
+}
+
+p {
+    margin: 20px 0;
+}
+
+/*flex container for columns*/
+.grid-columns {
+    max width: 350px ;
+    margin: 0 auto;
+
+display:flex;
+/*align-items:stretch:*/
+}
+
+.part {
+    background: whitemargin: 20px;
+    padding: 20px;
+    border-radius: 4px;
+    text-align: left;
+
+    flex:1;
+    display:flex;
+    flex-wrap:wrap;
+
+}
+
+footer { 
+    background: gray;
+    padding: 10px 0;
+    border-top: 3px solid green;
+    text-align: center;
+    margin-top: auto;
+}
